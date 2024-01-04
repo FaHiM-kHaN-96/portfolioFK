@@ -1,0 +1,324 @@
+/*==============================================
+Template Name: My profile 
+Template:
+Atuthor: MD Fahim Khan
+Author URI: https://www.facebook.com/mfahimrahman1014
+Versin: 1.0
+===========================================*/
+/*CSS Index==============================================
+0.common css
+1.Reusable components
+2.hero
+3.about
+4.prossces
+5.experince
+6.work
+=========================================================*/
+
+/*common Css*/
+html{
+    font-size: 1px;
+    text-rendering: optimizeLegibility;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #240303;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight:700;
+
+}
+.cfix::after{
+    content: '';
+    display: table;
+    clear: both;
+
+}
+
+
+/*Reusable Components*/
+h1{
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid#fff;
+}
+.container{
+    
+    max-width: 1180px;
+    margin: auto;
+}
+
+section{
+    padding: 100px  0;
+    
+}
+.btn{
+    color: #000;
+    background-color: rgb(61, 3, 3);
+    width: 100%;
+    padding: 3px 0;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+.section-title{
+    color: rgba(6, 207, 167, 0.913);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.section-title h1{
+    color: rgba(19, 207, 6, 0.913);
+    font-size: 26px;
+    margin-top: 0PX;
+    margin-bottom: 35PX;
+}
+.containerd{
+    background: linear-gradient(rgba(6, 1, 18, 0.664),rgba(196, 199, 182, 0.836)) no-repeat center/cover;
+
+    margin: auto;
+}
+.section-titles{
+    color: rgba(28, 22, 98, 0.913);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.section-titles h1{
+    color: rgba(19, 207, 6, 0.913);
+    font-size: 26px;
+    margin-top: 0PX;
+    margin-bottom: 35PX;
+}
+
+/*.2 hero */
+#hero{
+    height: 100vh;
+    background: linear-gradient(rgba(80, 18, 224, 0.664),rgba(138, 11, 11, 0.836)) no-repeat center/cover;
+    position: relative;
+ 
+
+}
+/*Navigation*/
+nav{
+   
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.logo{
+    width: 300px;
+    
+    float: left;
+    
+}
+
+.menu{
+    float: right;
+}
+.menu a ion-icon {
+    color: #fff;
+    font-size: 45px;
+    border: 1px solid #850808;
+}
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.hero-content span{
+    color: rgb(4, 25, 63);
+    font-size: 22px;
+    margin-top: 15px;
+    display: block;
+}
+.scrol-down{
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+    text-align: center;
+}
+.scrol-down a ion-icon{
+    color: #fff;
+    font-size: 45px;
+    position: relative;
+   
+    animation: arrow 1s infinite;
+}
+/*Anemation*/
+@keyframes arrow{
+    0%{
+        top: 10px;
+    }
+    65%{
+        top: 30px;
+    }
+    100%{
+        top: 10px;
+    }
+}
+/*Partical js*/
+canvas.particles-js-canvas-el{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 0;
+} 
+/* Start About*/
+.about-grid{
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+    
+}
+.me{
+    width: 100%;
+    grid-template-columns: 1fr,2fr;
+    grid: 60px;
+    
+    clip-path: polygon(0% 0%, 70% 0%, 100% 0%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.about-grid-item h4{
+    
+    font-size: 98px;
+    color: #265e893f;
+}
+.btn-full{
+    border-color: rgb(24, 11, 145) ;
+    background-color: rgb(109, 112, 206);
+    transition: all .5S;
+
+}
+.btn-full:hover{
+    background-color:transparent;
+    color: rgb(19, 17, 23);
+}
+/*end About*/
+
+#about{
+    background: linear-gradient(rgba(179, 14, 14, 0.574),rgba(11, 30, 138, 0.614));
+    background-color: rgba(38, 196, 17, 0.418);
+}
+#work{
+    background-color: rgba(119, 114, 114, 0.358);
+}
+/*prossecs*/
+#prossecs{
+    background: linear-gradient(rgba(11, 30, 138, 0.614),rgba(0, 0, 0, 0.899));
+} 
+.prossecs-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.prossecs-grid-item{
+    background-color: #000;
+    text-align: center;
+    padding: 85px ;
+}
+.prossecs-grid-item:nth-child(1){
+ background-color: #205ba7;
+}
+.prossecs-grid-item:nth-child(2){
+    background-color: #a76d20;
+}
+.prossecs-grid-item:nth-child(3){
+    background-color: #2d134e;
+}
+.prossecs-grid-item:nth-child(4){
+    background-color: #0d0814;
+}
+.prossecs-grid-item ion-icon{
+    color: #4c4c;
+    font-size: 49px;
+    
+}
+.prossecs-grid-item h4{
+    color:#f6f6f6 ;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/*experince*/
+#exp{
+    background: #50647d url(img/cover2.jpg)no-repeat center top/cover fixed;
+}
+.exp-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+}
+.exp-grid-item{
+    background-color: rgba(6, 11, 82, 0.61);
+    padding: 35px 40px;
+    color:#fff;
+}
+.exp-grid-item h3{
+    font-size: 26px;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.exp-grid-item h4{
+    color: #fff;
+}
+.exp-grid-item span{
+    color: #fff;
+}
+hr{
+    border: 0;
+    border-bottom:1px solid #fff;
+    margin: 30px 0;
+}
+/*experince*/
+/*Work*/
+.work-filter{
+    text-align: center;
+    margin-bottom:40px ;
+}
+.work-filter button{
+    background: #000;
+    border: 2px solid #000;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.work-filter button:hover,
+button.mixitup-control-active{
+    background-color: #1b6cb89f;
+}
+.work-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:30px;
+}
+.work-grid-item img{
+    width: 700%;
+    height: 250px;
+    
+}
+
+.work-grid-item:nth-child(3){
+    grid-column: 1/2;
+}
+.uk-lightbox{
+    background-color:rgba(0, 0, 0, 0.747);
+}
+/*Work*/
